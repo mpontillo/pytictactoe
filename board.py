@@ -63,7 +63,5 @@ class Board(object):
             return False
         else:
             self.board[x][y] = move
-            if self.check_win(move):
-                print("Game over.")
             self.lastmove = move
             return True
